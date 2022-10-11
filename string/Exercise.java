@@ -2,7 +2,7 @@ package api.exercise;
 
 /**
  * @ClassName Exercise
- * @Description TODO
+ * @Description TODO  找出连续最长数字串
  * @Author JaChen
  * @Date 2022/10/11 15:52
  * @Version 1.0
