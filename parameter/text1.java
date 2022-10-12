@@ -1,3 +1,4 @@
+
 class TEXT{
 	public int num;
 	public String str;
@@ -8,14 +9,14 @@ class TEXT{
 	}
 }
 public class Class4 {
-    //tIn�Ǵ�����ĵ�ַ���޸��βε����ԣ���Ӱ��ʵ��
-    //intIn�Ǵ����ݣ������������͵��β��޸ĺ�ʵ���޹�
-    //Integer��String���󲻿ɱ�
+    //tIn是传对象的地址，修改形参的属性，会影响实参
+    //intIn是传数据，基本数据类型的形参修改和实参无关
+    //Integer和String对象不可变
 	public static void f1(TEXT tIn, int intIn, Integer integerIn, String strIn){
 		tIn.num =200;
-		tIn.str = "bcd";//�βκ�ʵ��ָ�����ͬһ��TEXT�Ķ����޸������ԣ����൱���޸�ʵ�ζ��������
-		intIn = 200;//�����������͵��β���ʵ�εġ���������������ô�޸ĺ�ʵ�ζ�û��ϵ
-		integerIn = 200;//Integer�����String����һ�����ǲ��ɱ䣬һ���޸Ķ����¶��󣬺�ʵ���޹�
+		tIn.str = "bcd";//形参和实参指向的是同一个TEXT的对象，修改了属性，就相当于修改实参对象的属性
+		intIn = 200;//基本数据类型的形参是实参的“副本”，无论怎么修改和实参都没关系
+		integerIn = 200;//Integer对象和String对象一样都是不可变，一旦修改都是新对象，和实参无关
 		strIn = "bcd";
 	}
 	public static void main(String[] args) {
