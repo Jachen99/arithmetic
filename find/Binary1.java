@@ -1,6 +1,6 @@
 /**
  * @ClassName Binary1
- * @Description TODO ¶þ·Ö²éÕÒintÐÍ
+ * @Description TODO äºŒåˆ†æŸ¥æ‰¾intåž‹
  * @Author JaChen
  * @Date 2022/10/11 21:21
  * @Version 1.0
