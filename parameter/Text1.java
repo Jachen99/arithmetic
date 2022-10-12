@@ -8,7 +8,7 @@ class TEXT{
 		this.str = str;
 	}
 }
-public class Class4 {
+public class Text1 {
     //tIn是传对象的地址，修改形参的属性，会影响实参
     //intIn是传数据，基本数据类型的形参修改和实参无关
     //Integer和String对象不可变
